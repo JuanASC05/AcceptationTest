@@ -1,0 +1,11 @@
+Feature: El profesional puede editar contenido del curso
+
+  Scenario: Acceso a la funcionalidad de edición de curso
+    Given el profesional está autenticado en la plataforma
+    When accede a la funcionalidad 'Editar contenido del curso'
+    Then la aplicación muestra los cursos asignados disponibles para edición
+
+  Scenario: Edición exitosa del contenido del curso
+    Given el profesional está editando un curso existente
+    When modifica el contenido y guarda los cambios correctamente
+    Then la aplicación confirma la actualización y refleja el nuevo contenido en la interfaz
