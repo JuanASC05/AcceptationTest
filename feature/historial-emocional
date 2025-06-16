@@ -1,0 +1,11 @@
+Feature: Acceso a historial emocional de pacientes
+
+  Scenario: Acceso a la funcionalidad del historial
+    Given el profesional está autenticado en la plataforma
+    When accede a la funcionalidad 'Acceso a historial emocional de pacientes'
+    Then la aplicación responde mostrando el historial emocional registrado
+
+  Scenario: Visualización correcta del historial
+    Given el profesional selecciona a un paciente específico
+    When la aplicación recupera correctamente los datos
+    Then se muestra el historial emocional completo para análisis
