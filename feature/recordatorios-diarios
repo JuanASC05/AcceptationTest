@@ -1,0 +1,11 @@
+Feature: Agregar recordatorios diarios personalizados
+
+  Scenario: Acceso a la funcionalidad 'Agregar recordatorios diarios personalizados'
+    Given el usuario se encuentra en la pantalla principal
+    When accede a la funcionalidad 'Agregar recordatorios diarios personalizados'
+    Then la aplicación muestra el formulario de configuración de recordatorios
+
+  Scenario: Registro exitoso de recordatorio diario
+    Given el usuario ha completado el formulario correctamente
+    When confirma la acción
+    Then la aplicación guarda el recordatorio y muestra un mensaje de éxito
