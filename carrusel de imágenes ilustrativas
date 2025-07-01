@@ -1,0 +1,18 @@
+Feature: Mostrar carrusel de imágenes ilustrativas
+
+  Como visitante,
+  Quiero ver imágenes representativas de la app en uso
+  Para comprender su funcionalidad y propósito
+
+  Background:
+    Dado que estoy en la landing page
+
+  Scenario: Navegación con flechas en el carrusel
+    Dado que visualizo el carrusel de imágenes
+    Cuando hago clic en la flecha derecha
+    Entonces la imagen mostrada cambia a la siguiente
+
+  Scenario: Navegación por teclado en el carrusel
+    Dado que el visitante está usando el teclado
+    Cuando presiona la flecha derecha o izquierda
+    Entonces el carrusel responde cambiando la imagen mostrada
