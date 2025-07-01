@@ -1,0 +1,18 @@
+Feature: Mostrar beneficios para adultos mayores en la landing page
+
+  Como visitante,
+  Quiero conocer los beneficios de usar la app si soy adulto mayor
+  Para entender cómo me puede ayudar en mi bienestar
+
+  Background:
+    Dado que estoy en la landing page
+
+  Scenario: Visualizar beneficios claros con lenguaje amigable
+    Dado que soy adulto mayor
+    Cuando entro a la landing
+    Entonces encuentro beneficios claros con lenguaje amigable
+
+  Scenario: Visualización libre de beneficios sin registro
+    Dado que no estoy registrado
+    Cuando reviso la landing
+    Entonces puedo ver estos beneficios libremente
