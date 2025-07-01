@@ -1,0 +1,17 @@
+Feature: Acceder a sección de preguntas frecuentes en la landing page
+
+  Como visitante,
+  Quiero leer una sección de preguntas frecuentes
+  Para resolver dudas rápidas sobre el uso de la app
+
+  Background:
+    Dado que estoy en la landing page
+
+  Scenario: Acceso libre a preguntas frecuentes
+    Dado que soy visitante
+    Cuando accedo a la sección FAQ
+    Entonces puedo leer las respuestas sin iniciar sesión
+
+  Scenario: Desplegar respuesta al hacer clic
+    Dado que hago clic en una pregunta
+    Entonces se despliega su respuesta correspondiente
