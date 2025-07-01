@@ -1,0 +1,18 @@
+Feature: Visualizar testimonios de usuarios en la landing page
+
+  Como visitante,
+  Quiero ver testimonios de usuarios en la landing page
+  Para conocer sus experiencias con la app
+
+  Background:
+    Dado que el visitante accede a la landing page sin necesidad de iniciar sesión
+
+  Scenario: Visualización de al menos 3 testimonios
+    Dado que soy un visitante
+    Cuando entro a la landing page
+    Entonces puedo visualizar al menos 3 testimonios en pantalla
+
+  Scenario: Acceso libre sin necesidad de cuenta
+    Dado que no tengo cuenta registrada
+    Cuando navego por la landing page
+    Entonces puedo acceder y leer los testimonios mostrados sin restricciones
