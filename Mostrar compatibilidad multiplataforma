@@ -1,0 +1,17 @@
+Feature: Mostrar compatibilidad multiplataforma en la landing page
+
+  Como visitante,
+  Quiero saber si la app está disponible en distintos dispositivos
+  Para decidir cómo usarla
+
+  Background:
+    Dado que estoy en la landing page
+
+  Scenario: Visualización de logos de descarga
+    Dado que accedo a la landing
+    Cuando visualizo la sección final
+    Entonces encuentro logos de descarga de Google Play y App Store
+
+  Scenario: Animación o información contextual al pasar el cursor
+    Dado que paso el cursor sobre un logo
+    Entonces se muestra información o animación contextual
