@@ -1,0 +1,18 @@
+Feature: Acceder a sección de contacto desde la landing page
+
+  Como visitante,
+  Quiero un acceso rápido para contactar al equipo desde la landing page
+  Para resolver dudas sin registrarme
+
+  Background:
+    Dado que el visitante está en la landing page sin haber iniciado sesión
+
+  Scenario: Acceder al contacto desde botón fijo
+    Dado que estoy en la landing
+    Cuando hago clic en “Contacto”
+    Entonces se despliega un formulario o un enlace de correo electrónico para enviar mensajes
+
+  Scenario: Visualización del botón en el pie de página
+    Dado que estoy en la parte inferior de la landing
+    Cuando busco información de contacto
+    Entonces puedo ver la opción de contacto visible en todo momento
