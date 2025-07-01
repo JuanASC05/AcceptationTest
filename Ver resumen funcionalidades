@@ -1,0 +1,18 @@
+Feature: Ver resumen de funcionalidades destacadas en la landing page
+
+  Como visitante,
+  Quiero flexibilidad en la plataforma para poder investigar la app
+  Mientras realizo otras actividades
+
+  Background:
+    Dado que el visitante está en la landing page sin registrarse
+
+  Scenario: Visualización adaptativa en móvil
+    Dado que ingresó desde un celular
+    Cuando hago scroll en la landing
+    Entonces el resumen de funcionalidades se adapta correctamente al dispositivo móvil
+
+  Scenario: Resumen visible y destacado
+    Dado que revisó la sección principal de la home
+    Cuando navego por la página
+    Entonces veo un resumen en texto o gráficos con al menos 3 funcionalidades destacadas
