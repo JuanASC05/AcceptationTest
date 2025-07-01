@@ -1,0 +1,18 @@
+Feature: Mostrar sección “¿Quiénes somos?” en la landing page
+
+  Como visitante,
+  Quiero leer sobre el equipo detrás de la app en la sección “¿Quiénes somos?”
+  Para generar confianza en el proyecto
+
+  Background:
+    Dado que estoy en la landing page
+
+  Scenario: Sección visible para visitantes sin iniciar sesión
+    Dado que soy un visitante
+    Cuando navego la landing
+    Entonces puedo ver la sección “¿Quiénes somos?” sin iniciar sesión
+
+  Scenario: Sección adaptada a dispositivos móviles
+    Dado que accedo desde un dispositivo móvil
+    Cuando hago scroll en la landing
+    Entonces la sección “¿Quiénes somos?” se adapta correctamente y es legible
