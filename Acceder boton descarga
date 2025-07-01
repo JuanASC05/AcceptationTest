@@ -1,0 +1,18 @@
+Feature: Acceder al botón de descarga de la app desde la landing
+
+  Como usuario nuevo,
+  Quiero acceder fácilmente al botón de descarga desde la landing
+  Para instalar la aplicación sin complicaciones
+
+  Background:
+    Dado que estoy en la landing page
+
+  Scenario: Botón de descarga visible en cabecera
+    Dado que estoy en la cabecera de la página
+    Cuando hago clic en “Descargar app”
+    Entonces soy redirigido a la tienda correspondiente (App Store o Google Play)
+
+  Scenario: Botón de descarga visible en pie de página
+    Dado que llegué al final de la página
+    Cuando busco el botón de descarga
+    Entonces lo encuentro disponible y visible
