@@ -1,0 +1,21 @@
+Feature: Descargar reporte de progreso emocional en PDF
+
+  Como paciente que realiza seguimiento a su bienestar emocional,
+  Quiero poder descargar un reporte con mi progreso en formato PDF
+  Para guardar o compartir con mis familiares o profesionales
+
+  Background:
+    Dado que el usuario ha iniciado sesión en su cuenta
+
+  Scenario: Descarga exitosa del reporte en PDF
+    Dado que el usuario tiene datos de progreso emocional registrados
+    Y el botón "Descargar PDF" está habilitado
+    Cuando el usuario presiona el botón "Descargar PDF"
+    Entonces el sistema genera un archivo PDF con nombre, fecha, cursos realizados y progreso alcanzado
+    Y el archivo PDF se descarga automáticamente al dispositivo del usuario
+
+  Scenario: Intento de descarga sin progreso registrado
+    Dado que el usuario no tiene datos de progreso emocional registrados
+    Y el botón "Descargar PDF" está deshabilitado o se muestra visible
+    Cuando el usuario intenta presionar el botón "Descargar PDF"
+    Entonces el sistema muestra una alerta indicando "No hay información suficiente para generar el reporte"
