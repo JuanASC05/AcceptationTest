@@ -1,0 +1,18 @@
+Feature: Acceso a red de apoyo entre usuarios
+
+  Como adulto mayor,
+  Quiero poder conectarme con otros adultos mayores con intereses similares,
+  Para compartir experiencias y apoyo.
+
+  Background:
+    Dado que accedo a la sección de comunidad en la aplicación
+
+  Scenario: Filtrado por intereses en la red de apoyo
+    Dado que selecciono un interés como "arte" o "meditación"
+    Cuando confirmo el filtro
+    Entonces veo una lista de perfiles afines con opciones de contacto seguro
+
+  Scenario: Moderación ante comportamiento inapropiado
+    Dado que inicio una conversación en la red de apoyo
+    Cuando se detecta comportamiento inapropiado
+    Entonces la app registra la interacción y activa mecanismos de moderación
