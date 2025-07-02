@@ -1,0 +1,18 @@
+Feature: Mostrar estadísticas de impacto
+
+  Como visitante,
+  Quiero ver estadísticas de impacto de la app
+  Para confiar en su efectividad
+
+  Background:
+    Dado que estoy navegando por la landing page
+
+  Scenario: Visualización de estadísticas destacadas
+    Dado que llego a la sección de estadísticas
+    Cuando observo los datos en pantalla
+    Entonces veo al menos tres métricas destacadas (usuarios, cursos completados, nivel de satisfacción)
+
+  Scenario: Tooltip explicativo al pasar el cursor
+    Dado que muevo el cursor sobre una estadística
+    Cuando la interacción es detectada
+    Entonces aparece un tooltip explicando el significado del dato
